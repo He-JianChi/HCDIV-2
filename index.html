@@ -1,32 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ocean Background with Large Centered iFrame</title>
-<style>
-  body, html {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(180deg, #4facfe 0%, #00f2fe 100%); /* Ocean gradient background */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualization Dissection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4f4;
+            color: #333;
+        }
 
-  iframe {
-    border: none;
-    width: 90vw; /* 90% of the viewport width */
-    height: 80vh; /* 80% of the viewport height */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow for depth */
-  }
-</style>
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #fff;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #ddd;
+        }
+
+        article {
+            margin-bottom: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #222;
+            font-weight: 600;
+        }
+
+        h2 {
+            font-size: 2.2em;
+        }
+
+        h3 {
+            font-size: 1.7em;
+        }
+
+        p, li {
+            font-size: 1.1em;
+        }
+
+        ul {
+            padding-left: 20px;
+            list-style-type: disc;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: #d00;
+        }
+
+        .article-image {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        ol {
+            padding-left: 20px;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Visualization Dissection</h1>
+        <p>by He JianChi 1009649</p>
+    </header>
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTQk25_UnXtWQ_Rrl1o4IC3fh-VRqKAQng4ToMQ3zhHiyG9l8oXgPqX_Tp7NaqncQ/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen="true"></iframe>
+    <section id="part1">
+        <h2>Part 1: Dissection</h2>
+        <article id="idioms-problem">
+            <img src="图片1.jpg" alt="Idioms Problem Image" class="article-image">
+            <h3>Idioms Problem</h3>
+            <ul>
+                <li><strong>Inappropriate use of colors and visuals:</strong> Confusing use of colors makes it impossible to see the point.</li>
+                <li><strong>Charts are disorganized:</strong> The passwords in the chart are not arranged in any obvious logical order.</li>
+                <li><strong>Information overload:</strong> The list contains a large number of passwords without filtering or searching capabilities.</li>
+                <li><strong>Lack of Context:</strong> No contextual information is provided about how these passwords are being used.</li>
+                <li><strong>Inconsistent design:</strong> The passwords in the list use different formats, reflecting inconsistencies in the data collection process.</li>
+            </ul>
+        </article>
+        <article id="data-issues">
+            <h3>Data Issues</h3>
+            <ul>
+                <li><strong>Data accuracy and completeness:</strong> Passwords do not show frequency of occurrence.</li>
+                <li><strong>Poor choice of data scale:</strong> The relative frequency or distribution of passwords is not provided.</li>
+                <li><strong>Missing data:</strong> No information about the source of the passwords is provided.</li>
+            </ul>
+        </article>
+        <article id="part1-improvement">
+            <h3>Part 1 Improvement</h3>
+            <ol>
+                <li>The use of color should help to distinguish different categories or emphasize certain data points.</li>
+                <li>Emphasis should be given by the size of the text or pattern.</li>
+                <li>Sources of data should be annotated in detail.</li>
+                <li>Don't pile on data to confuse the viewer.</li>
+            </ol>
+        </article>
+    </section>
 
+    <section id="part2">
+        <h2>Part 2: Data Issues</h2>
+        <article id="idioms-issues">
+            <img src="图片2.jpg" alt="Idioms Issues Image" class="article-image">
+            <h3>Idioms Issues</h3>
+            <ul>
+                <li><strong>Information overload:</strong> Charts contain a large number of data points without clear organization.</li>
+                <li><strong>Lack of Context:</strong> Charts do not provide enough contextual information.</li>
+                <li><strong>Inconsistent design:</strong> Numbers and percentages are not formatted consistently.</li>
+            </ul>
+        </article>
+        <article id="data-issues-part2">
+            <h3>Data Issues</h3>
+            <ul>
+                <li><strong>Poor choice of data scale:</strong> The chart refers to “one million plastic beverage bottles purchased every minute” but provides no contextual information on the global population or beverage consumption, which makes it difficult to understand the significance of this figure. Figures such as “490 million tons of plastic are discarded” and “55% of plastic is used only once” do not provide a time frame, making it unclear whether these figures are cumulative or annual.</li>
+                <li><strong>Missing/inaccurate data:</strong> The chart refers to “830 million tons of plastic incinerated,” but it is not clear how this figure relates to other data, such as how it relates to total plastic production. The data for “260 million tons of plastics still in use” does not specify the type or use of these plastics, which limits the usefulness of the data.</li>
+            </ul>
+        </article>
+        <article id="part2-improvement">
+            <h3>Part 2 Improvement</h3>
+            <ol>
+                <li>Provide contextual information: Provide more context for each data point, such as global trends in plastics production and consumption, and the impact of plastics on the environment.</li>
+                <li>Clarify timeframe: Clarify the timeframe of each data point, whether annual or cumulative, so that users can better understand the scale of the data.</li>
+                <li>Interactivity: Add interactive elements such as tooltips, click-to-expand details or filters to improve the user experience.</li>
+                <li>Highlight key information: Use size, color, or position to highlight the most important data points for quick identification by users.</li>
+            </ol>
+        </article>
+    </section>
 </body>
 </html>
